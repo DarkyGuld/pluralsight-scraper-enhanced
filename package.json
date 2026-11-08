@@ -1,35 +1,46 @@
 {
-  "name": "pluralsight-scraper",
-  "version": "2.1.0",
-  "description": "A scraper for pluralsight's library meant to download video files for offline viewing.",
+  "name": "pluralsight-scraper-enhanced",
+  "version": "3.0.0",
+  "description": "Enhanced Pluralsight downloader with ILX/video-course support, 1080p HLS, subtitles, labs, practice exams, Jellyfin, MEGA and an Android companion app.",
   "main": "index.js",
   "dependencies": {
+    "markdown-it": "^15.0.3",
     "node-fetch": "^2.6.0",
     "puppeteer": "^2.1.1",
     "puppeteer-extra": "^3.1.9",
     "puppeteer-extra-plugin-stealth": "^2.4.9",
     "yargs": "^15.3.1"
   },
-  "devDependencies": {},
   "scripts": {
     "login": "node index.js login",
     "get": "node index.js get",
+    "serve": "node server.js",
+    "jellyfin-library": "node scripts/build-jellyfin-library.js",
+    "mega-sync": "bash scripts/mega-sync.sh",
     "start": "node index.js"
   },
-  "author": "Slava Knyazev",
+  "author": "Slava Knyazev; Enhanced by DarkyGuld",
   "license": "GPL-2.0",
+  "engines": {
+    "node": ">=18"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/knyzorg/pluralsight-scraper.git"
+    "url": "git+https://github.com/DarkyGuld/pluralsight-scraper-enhanced.git"
   },
   "keywords": [
     "pluralsight",
     "scraper",
     "downloader",
-    "ripper"
+    "ripper",
+    "hls",
+    "subtitles",
+    "jellyfin",
+    "mega",
+    "offline"
   ],
   "bugs": {
-    "url": "https://github.com/knyzorg/pluralsight-scraper/issues"
+    "url": "https://github.com/DarkyGuld/pluralsight-scraper-enhanced/issues"
   },
-  "homepage": "https://github.com/knyzorg/pluralsight-scraper#readme"
+  "homepage": "https://github.com/DarkyGuld/pluralsight-scraper-enhanced#readme"
 }

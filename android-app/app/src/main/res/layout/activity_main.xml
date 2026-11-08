@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f1117">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0f1117" />
+
+    <Button
+        android:id="@+id/serverButton"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="18dp"
+        android:text="⚙"
+        android:textSize="20sp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:backgroundTint="#CC2a3040"
+        android:textColor="#e7eaf3"
+        android:elevation="10dp"
+        android:contentDescription="Serverinnstillinger" />
+
+</FrameLayout>

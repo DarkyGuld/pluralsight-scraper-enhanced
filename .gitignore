@@ -1,6 +1,16 @@
 node_modules
+browsers
 videos
 cookies.txt
+config.json
 package-lock.json
 .env
 .gitignore
+android-app/.gradle
+android-app/build
+android-app/app/build
+android-app/local.properties
+.gradle
+.idea
+*.log
+*.apk

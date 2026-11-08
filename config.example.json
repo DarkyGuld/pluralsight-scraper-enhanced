@@ -1,0 +1,21 @@
+{
+  "quality": "best",
+  "delay": 10,
+  "subs": "all",
+  "keepSrt": false,
+  "outputDir": "videos",
+  "retries": 3,
+  "chapters": true,
+  "resources": true,
+  "transcripts": true,
+  "nfo": true,
+  "poster": true,
+  "playlist": true,
+  "index": true,
+  "notify": true,
+  "thumbnails": true,
+  "tvLayout": true,
+  "serverPort": 4545,
+  "serverHost": "0.0.0.0",
+  "webhookUrl": ""
+}

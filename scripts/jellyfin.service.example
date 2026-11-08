@@ -1,0 +1,16 @@
+[Unit]
+Description=Jellyfin Media Server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/Applications/jellyfin/jellyfin
+Environment=LD_LIBRARY_PATH=%h/Applications/jellyfin/libssl3/usr/lib/x86_64-linux-gnu
+Environment=DOTNET_CLI_TELEMETRY_OPTOUT=1
+ExecStart=%h/Applications/jellyfin/jellyfin/jellyfin --datadir %h/.local/share/jellyfin --configdir %h/.config/jellyfin --cachedir %h/.cache/jellyfin --logdir %h/.local/share/jellyfin/log --webdir %h/Applications/jellyfin/jellyfin/jellyfin-web --ffmpeg /usr/bin/ffmpeg
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
